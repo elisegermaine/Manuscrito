@@ -1,3 +1,4 @@
 # tesis
 
-This is Elise Servajean´s thesis.
+This is Elise Servajean thesis.
+
