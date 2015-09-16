@@ -1,0 +1,337 @@
+%\pagestyle{empty}
+%\linespread{1.2}
+%\documentclass[11pt,letterpaper,headinclude=true]{scrbook}
+%\usepackage[linedheaders, dottedtoc, manychapters,
+%subfigure,floatperchapter]{classicthesis}
+%\textheight 22.8 cm
+\documentclass[phd, titlesmallcaps, copyrightpage]{mqthesis}
+
+%FORMATO USUAL DE LA ESCUELA DESCOMENTAR PARA USAR
+%\documentclass[11pt,letterpaper]{report}
+% \oddsidemargin 4.6 mm
+% \evensidemargin 4.6 mm
+%\textwidth 16.6 cm
+%\topmargin -5.4 mm
+%\textheight 22.8 cm
+% \headsep 0.5cm
+% \parindent 1em
+\parskip 1.8ex
+%\renewcommand{\topfraction}{0.85}
+%\renewcommand{\textfraction}{0.1}
+%\renewcommand{\floatpagefraction}{0.75}
+%\documentclass[10 pt ,letterpaper, twosided, twocolumn]{report}
+
+\newcommand\nop[1]{}
+%\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage[activeacute,english]{babel}
+\usepackage[ansinew]{inputenc}
+\usepackage{latexsym}
+\usepackage[varg]{txfonts}
+\usepackage{subfigure}
+\usepackage{longtable,lscape}
+\usepackage{threeparttable}
+\usepackage{verbatim}
+\usepackage{rotating}
+\usepackage{afterpage} 
+\usepackage{amssymb}
+%\usepackage[format=hang]{caption,subfig}
+\usepackage{color, colortbl}
+
+\newcommand{\comments}[1]{}
+\newcommand{\tco}{\mbox{$^{13}$CO(3-2)}}
+\newcommand\nhp{\mbox{N$_2$H$^+$}}
+\newcommand\nhpt{N$_2$H$^+$(3-2)}
+\newcommand\nhpl{\mbox{N$_2$H$^+$(1-0)}}
+\newcommand\hcop{HCO$^+$}
+\newcommand\hcn{HCN}
+\newcommand\htrcn{H$^{13}$CN}
+\newcommand\hnc{HNC}
+\newcommand\hnco{HNCO}
+\newcommand\ch{C$_2$H}
+\newcommand\htcop{H$^{13}$CO$^+$}
+\newcommand\hctn{HC$_3$CN}
+\newcommand\hntc{HN$^{13}$C}
+\newcommand\tcs{$^{13}$CS}
+\newcommand\chtcn{CH$_3$CN}
+\newcommand\sio{SiO}
+\newcommand\halpha{H$_\alpha$}
+\newcommand\hctrccn{HC$^{13}$CCN}
+\newcommand\mslin{M$_\odot$ pc$^{-1}$}
+\newcommand\ms{M$_\odot$}
+\newcommand\kms{ km s$^{-1}$}
+\newcommand\kcm{ K cm$^{-3}$}
+\newcommand\grcm{gr cm$^{-1}$}
+\newcommand\grcmt{gr cm$^{-3}$}
+\newcommand\cmd{cm$^{-2}$}
+
+\newcommand\cmdgr{cm$^2$gr$^{-1}$}
+\newcommand\meanp{$\langle P \rangle$}
+\newcommand\meand{$\langle \rho \rangle$}
+\newcommand\meansigma{$\langle \sigma \rangle$}
+\newcommand\ratiop{$\langle P \rangle/P_s$}
+\newcommand\ratiom{$m/m_{vir}$}
+\newcommand\mw{$\mathcal{M}/|\mathcal{W}|$}
+\newcommand{\mum}{$\mu$m}
+\newcommand{\degr}{\ensuremath{^\circ}}
+
+
+
+
+%\renewcommand{\baselinestretch}{.4}
+%\renewcommand{\tco}{$^{13}$CO(3-2)}
+%\renewcommand{\nhp}{N$_2$H$^+$}
+%%% Para pasar del dvi al ps usar en Windows::::  dvips -t letter cosa
+%%% para transformar bien a ps usar dvips -t letter cosa.dvi
+%\usepackage{psfig}
+%\usepackage{dvips}
+%\usepackage{psfrag,xscale}
+
+%\bibpunct{[**}{**]}{,}{}{}{,}
+
+\numberwithin{equation}{chapter}
+%\usepackage{makeidx}
+%\numberwithin{figure}{chapter}
+
+\setcounter{secnumdepth}{3}% para numerar hasta subsubsections
+\setcounter{tocdepth}{2} % hasta donde aparece en el indice
+
+
+%\numberwithin{equation}{subsection}
+%\usepackage{astron}
+%\usepackage[spanish]{babel} % T�tulos en espa�ol
+
+% Cambiar el titulo de la bibliografia cuando el estilo es report
+%\renewcommand\bibname{Bibliography}%Bibliography es el dafault
+%\renewcommand\bibname{Bibliography\footnote{Gracias ADS!!!}}%Bibliography es el dafault
+
+% \renewcommand\refname{Bibliography} % Asi es cuando es article
+
+%\input{aas_macros.tex}
+\bibliographystyle{astron}
+\bibpunct{(}{)}{;}{a}{}{,}
+\def\newblock{}
+\def\apj{{ApJ}}                 
+\def\apjl{{ApJ}}                
+\def\apjs{{ApJS}}               
+\def\ao{{Appl.~Opt.}}           
+\def\apss{{Ap\&SS}}             
+\def\aap{{A\&A}}                
+\def\aapr{{A\&A~Rev.}}          
+\def\aaps{{A\&AS}}              
+\def\azh{{AZh}}                 
+\def\baas{{BAAS}}               
+\def\jrasc{{JRASC}}             
+\def\memras{{MmRAS}}            
+\def\mnras{{MNRAS}}   
+\def\qjras{{QJRAS}}   
+\def\araa{{ARAA}}         
+\def\pra{{Phys.~Rev.~A}}        
+\def\prb{{Phys.~Rev.~B}}        
+\def\prc{{Phys.~Rev.~C}}        
+\def\prd{{Phys.~Rev.~D}}        
+\def\pre{{Phys.~Rev.~E}}        
+\def\prl{{Phys.~Rev.~Lett.}}    
+\def\pasp{{PASP}}               
+\def\pasj{{PASJ}}               
+\def\planss{{Planet.~Space~Sci.}}
+
+
+%\bibliographystyle{plainnat}
+\DeclareMathOperator{\F}{F}
+\DeclareMathOperator{\BesselK}{K}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\n}{N}
+\DeclareMathOperator{\B}{B}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+%\makeindex
+\begin{document}
+
+\vspace*{-18 ex}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.1\linewidth}
+\includegraphics[width=.9 \textwidth ]{ImageServlet.ps}%Figures/logo.ps}
+\end{minipage}
+\begin{minipage}[b]{0.9\linewidth}
+{\bf \large \noindent UNIVERSIDAD DE CHILE \\
+   FACULTAD DE CIENCIAS F\'ISICAS Y MATEM\'ATICAS \\
+ DEPARTAMENTO  DE ASTRONOM\'IA }
+\end{minipage}
+\hfill
+%\vspace*{-5 ex}\includegraphics[width= 0.1 \textwidth ]{Figures/logo.ps}
+%\vspace{2 ex} %para el formato normal
+\vspace{4cm}
+
+\begin{center}{\bf \Large TITULO AQUI}\end{center}
+
+\vspace{1 ex} 
+
+\begin{center}{\it  \large TESIS PARA OPTAR AL GRADO DE DOCTORADO EN \\
+CIENCIAS, MENCI\'ON ASTRONOM\'IA} \end{center}
+
+\vspace{1.5cm} 
+
+
+\begin{center} {\large AUTOR: \\ {\bf ELISE MARIE GERMAINE SERVAJEAN BERGOEING}} \end{center}
+
+\vspace{7 ex} 
+
+\begin{center} { PROFESOR GU\'IA:\\
+    GUIDO GARAY BRIGNARDELLO\\
+    PROFESOR CO-GU\'IA:\\
+    JILL MAREE RATHBORNE\\
+    \vspace{0.3cm}
+    MIEMBROS DE LA COMISI\'ON:\\
+    ??\\
+    ??\\
+    ??\\
+    \vspace{0.8cm}
+    SANTIAGO DE CHILE\\
+    ?? 2015 } \end{center}
+
+
+
+
+\newpage
+
+\thispagestyle{empty}
+{\Huge \bf \vspace*{5 ex} Resumen}
+
+\vspace*{8 ex}%\hspace*{3em} 
+\input{resumen.tex}
+\newpage
+
+\thispagestyle{empty}
+{\Huge \bf \vspace*{5 ex} Agradecimientos}
+\vspace*{8 ex}%\hspace*{3em}
+%\input{agradecimientos.tex}
+\newpage
+
+\pagenumbering{Roman}
+\tableofcontents
+\listoffigures
+\listoftables
+%{\tiny
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction}
+\pagenumbering{arabic}
+\input{introduction/molecular_clouds}
+\input{introduction/star_formation}
+\include{introduction/filaments}
+
+
+
+ 
+%\section{Physical introduction}
+
+
+\newpage
+\section{Identification and characterization of filaments}
+\input{techniques/overview.tex}
+\input{techniques/defining_filaments.tex}
+\input{techniques/dust-emission.tex}
+\input{techniques/millimeter.tex}
+
+%\input{techniques/properties.tex}
+%\input{techniques/distance.tex}
+%\input{techniques/temperature.tex}
+\label{sec:mass}
+\input{techniques/pressure.tex}
+\input{techniques/clumps.tex}
+
+\newpage
+\section{Thesis aims}
+\input{introduction/thesis_aim.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{The data}\label{observations}
+%\input{observaciones/intro_observations}
+\input{observaciones/chap_observations}
+
+\chapter{Galactic plane continuum survey: ATLASGAL}\label{sec:atlasgal}
+\input{iden_filaments/atlasgal.tex}
+
+\input{iden_filaments/overview.tex}
+%%\input{chap_identification}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Data description}\label{analy-obs}
+\chapter{Filament A: Nessie}
+\input{A/chap_analysis_obs}
+\include{A/properties}
+\chapter{Filament B: AGAL337.406-0.402}
+\input{B/chap_analysis_obs_b}
+\include{B/properties}
+\chapter{Filament C: AGAL335.061-0.427}
+\input{C/chap_analysis_obs_c}
+\include{C/properties_c}
+\chapter{Filament D: AGAL332.294-0.094}
+\input{D/chap_analysis_obs_d}
+\include{D/properties_d}
+\chapter{Filament E: AGAL332.094-0.421}
+\input{E/chap_analysis_obs_e}
+\include{E/properties_e}
+%\chapter{Physical parameters}\label{Model}
+%\input{chap_parameters}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Discussion \& Conclusions}
+\input{resultados/global-prop.tex}
+\input{resultados/stability.tex}
+\input{resultados/fragmentation.tex}
+\input{resultados/clumps.tex}
+%\input{resultados/theories.tex}
+%\input{resultados/evol_spectra.tex}
+\input{resultados/tabla-sf-mol.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Summary}
+\input{summary.tex}
+
+
+
+% \renewcommand{\theenumi}{{\bf Ad.\arabic{enumi}}}
+% \begin{enumerate}
+% \item
+% \end{enumerate}
+% \renewcommand{\theenumi}{{\bf Co.\arabic{enumi}}}
+% \begin{enumerate}
+% \item
+% \label{conplow}}
+% \end{enumerate} 
+% \renewcommand{\theenumi}{\arabic{enumi}}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix %\addcontentsline{toc}{chapter}{Appendices}
+\input{appendix/apendix.tex}
+\label{apendix:parametros}
+\input{appendix/apendix-param.tex}
+\input{appendix/apendix-catalog.tex} 
+\chapter[Equations]{}
+\input{appendix/apendix-formulas.tex}
+\input{appendix/channel_maps.tex}
+%\input{resumenmass}
+%\end{appendices}
+%\input{apend_cal}
+
+
+\newpage
+%\noocite{libritoverde}
+%\nocite{rybicky}
+%\nocite{Shuradiation}
+%\addcontentsline{toc}{chapter}{Bibliography}% 
+\bibliography{bibliografia}      % bibliografia.bib
+%}
+\end{document}
