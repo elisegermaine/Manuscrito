@@ -23,7 +23,15 @@
 
 \newcommand\nop[1]{}
 %\usepackage{graphicx}
-\usepackage{natbib}
+\usepackage{apalike}
+\usepackage{ccaption}
+\usepackage{quotchap}
+\usepackage{makeidx}
+\usepackage{tocbibind}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{showkeys}
 \usepackage{amsmath}
 \usepackage[activeacute,english]{babel}
 \usepackage[ansinew]{inputenc}
@@ -157,7 +165,7 @@
 \vspace*{-18 ex}
 \thispagestyle{empty}
 \begin{minipage}[b]{0.1\linewidth}
-\includegraphics[width=.9 \textwidth ]{ImageServlet.ps}%Figures/logo.ps}
+%\includegraphics[width=.9 \textwidth ]{ImageServlet.ps}%Figures/logo.ps}
 \end{minipage}
 \begin{minipage}[b]{0.9\linewidth}
 {\bf \large \noindent UNIVERSIDAD DE CHILE \\
@@ -205,7 +213,7 @@ CIENCIAS, MENCI\'ON ASTRONOM\'IA} \end{center}
 {\Huge \bf \vspace*{5 ex} Resumen}
 
 \vspace*{8 ex}%\hspace*{3em} 
-\input{resumen.tex}
+%\input{resumen.tex}
 \newpage
 
 \thispagestyle{empty}
@@ -222,10 +230,10 @@ CIENCIAS, MENCI\'ON ASTRONOM\'IA} \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Introduction}
-\pagenumbering{arabic}
-\input{introduction/molecular_clouds}
-\input{introduction/star_formation}
-\include{introduction/filaments}
+%\pagenumbering{arabic}
+%\input{introduction/molecular_clouds}
+%\input{introduction/star_formation}
+%\include{introduction/filaments}
 
 
 
@@ -233,70 +241,70 @@ CIENCIAS, MENCI\'ON ASTRONOM\'IA} \end{center}
 %\section{Physical introduction}
 
 
-\newpage
-\section{Identification and characterization of filaments}
-\input{techniques/overview.tex}
-\input{techniques/defining_filaments.tex}
-\input{techniques/dust-emission.tex}
-\input{techniques/millimeter.tex}
+%\newpage
+%\section{Identification and characterization of filaments}
+%\input{techniques/overview.tex}
+%\input{techniques/defining_filaments.tex}
+%\input{techniques/dust-emission.tex}
+%\input{techniques/millimeter.tex}
 
 %\input{techniques/properties.tex}
 %\input{techniques/distance.tex}
 %\input{techniques/temperature.tex}
-\label{sec:mass}
-\input{techniques/pressure.tex}
-\input{techniques/clumps.tex}
+%\label{sec:mass}
+%\input{techniques/pressure.tex}
+%\input{techniques/clumps.tex}
 
-\newpage
-\section{Thesis aims}
-\input{introduction/thesis_aim.tex}
+%\newpage
+%\section{Thesis aims}
+%\input{introduction/thesis_aim.tex}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{The data}\label{observations}
-%\input{observaciones/intro_observations}
-\input{observaciones/chap_observations}
+\chapter{The data}
+\input{Observations/observaciones}
+%\input{observaciones/chap_observations}
 
-\chapter{Galactic plane continuum survey: ATLASGAL}\label{sec:atlasgal}
-\input{iden_filaments/atlasgal.tex}
+%\chapter{Galactic plane continuum survey: ATLASGAL}\label{sec:atlasgal}
+%\input{iden_filaments/atlasgal.tex}
 
-\input{iden_filaments/overview.tex}
+%\input{iden_filaments/overview.tex}
 %%\input{chap_identification}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\chapter{Data description}\label{analy-obs}
-\chapter{Filament A: Nessie}
-\input{A/chap_analysis_obs}
-\include{A/properties}
-\chapter{Filament B: AGAL337.406-0.402}
-\input{B/chap_analysis_obs_b}
-\include{B/properties}
-\chapter{Filament C: AGAL335.061-0.427}
-\input{C/chap_analysis_obs_c}
-\include{C/properties_c}
-\chapter{Filament D: AGAL332.294-0.094}
-\input{D/chap_analysis_obs_d}
-\include{D/properties_d}
-\chapter{Filament E: AGAL332.094-0.421}
-\input{E/chap_analysis_obs_e}
-\include{E/properties_e}
+%\chapter{Filament A: Nessie}
+%\input{A/chap_analysis_obs}
+%\include{A/properties}
+%\chapter{Filament B: AGAL337.406-0.402}
+%\input{B/chap_analysis_obs_b}
+%\include{B/properties}
+%\chapter{Filament C: AGAL335.061-0.427}
+%\input{C/chap_analysis_obs_c}
+%\include{C/properties_c}
+%\chapter{Filament D: AGAL332.294-0.094}
+%\input{D/chap_analysis_obs_d}
+%\include{D/properties_d}
+%\chapter{Filament E: AGAL332.094-0.421}
+%\input{E/chap_analysis_obs_e}
+%\include{E/properties_e}
 %\chapter{Physical parameters}\label{Model}
 %\input{chap_parameters}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Discussion \& Conclusions}
-\input{resultados/global-prop.tex}
-\input{resultados/stability.tex}
-\input{resultados/fragmentation.tex}
-\input{resultados/clumps.tex}
+%\chapter{Discussion \& Conclusions}
+%\input{resultados/global-prop.tex}
+%\input{resultados/stability.tex}
+%\input{resultados/fragmentation.tex}
+%\input{resultados/clumps.tex}
 %\input{resultados/theories.tex}
 %\input{resultados/evol_spectra.tex}
-\input{resultados/tabla-sf-mol.tex}
+%\input{resultados/tabla-sf-mol.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Summary}
-\input{summary.tex}
+%\chapter{Summary}
+%\input{summary.tex}
 
 
 
@@ -314,24 +322,26 @@ CIENCIAS, MENCI\'ON ASTRONOM\'IA} \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\appendix %\addcontentsline{toc}{chapter}{Appendices}
-\input{appendix/apendix.tex}
-\label{apendix:parametros}
-\input{appendix/apendix-param.tex}
-\input{appendix/apendix-catalog.tex} 
-\chapter[Equations]{}
-\input{appendix/apendix-formulas.tex}
-\input{appendix/channel_maps.tex}
+%\appendix %\addcontentsline{toc}{chapter}{Appendices}
+%\input{appendix/apendix.tex}
+%\label{apendix:parametros}
+%\input{appendix/apendix-param.tex}
+%\input{appendix/apendix-catalog.tex} 
+%\chapter[Equations]{}
+%\input{appendix/apendix-formulas.tex}
+%\input{appendix/channel_maps.tex}
 %\input{resumenmass}
 %\end{appendices}
 %\input{apend_cal}
 
 
 \newpage
+\bibliographystyle{apalike}
+%\addcontentsline{toc}{section}{Bibliography}
 %\noocite{libritoverde}
 %\nocite{rybicky}
 %\nocite{Shuradiation}
-%\addcontentsline{toc}{chapter}{Bibliography}% 
-\bibliography{bibliografia}      % bibliografia.bib
+\addcontentsline{toc}{chapter}{Bibliography}% 
+\bibliography{myrefs}      % bibliografia.bib
 %}
 \end{document}
