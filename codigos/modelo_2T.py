@@ -61,13 +61,9 @@ def chi2(P,nu,spec):
 
    teorico1 = teorico(nu,P)
 
-   suma = 0
-   for i in range(np.shape(nu):
+   chi2 = np.sum((spec - teorico1)**2 / teorico1)
 
-                  resta = ((spec[i]-teorico1[i])**2)/teorico1[i]
-                  suma = suma + resta
-
-   return suma
+   return chi2
 
 #minimizo con minimos cuadrados
 def fit(nu,spec,P):
